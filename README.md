@@ -1,3 +1,5 @@
+init
+
 # motin-vue
 
 > A Vue.js project
