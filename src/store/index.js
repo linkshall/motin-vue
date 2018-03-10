@@ -6,7 +6,13 @@ import action from './action'
 Vue.use(Vuex)
 
 const state = {
-  login: false,
+  login: true,
+  userInfo: {
+    info: {
+      avatar: 'http://ouibvkb9c.bkt.clouddn.com/avatar/1520238560824.png',
+      name: '哒哒哒'
+    }
+  },
   cartList: [
     {
       productId:0,
@@ -26,12 +32,13 @@ const state = {
       productPrice:'99',
       productImg:'http://image.smartisanos.cn/resource/0540778097a009364f2dcbb8c5286451.jpg'
     }
-  ]
+  ],
+  showCart: false
 }
 
 export default new Vuex.Store({
   state,
-  // action,
-  // mutations
+  action,
+  mutations
 })
 
